@@ -7,7 +7,7 @@ app.use(express.json());
 
 const PORT = 3333;
 
-app.use(categoriesRoutes); 
+app.use("/categories", categoriesRoutes); 
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
