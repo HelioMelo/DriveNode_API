@@ -1,9 +1,10 @@
 import { Router } from "express";
-import { CategoriesRepository } from "../repositories/CategoriesRepository";
+
 import { CreateCategoryServices } from "../services/CreateCategoryServices";
+import { CategoriesRepository } from "../repositories/CategoriesRepository";
 
 const categoriesRoutes = Router();
-const categoriesRepository = new CategoriesRepository
+const categoriesRepository = new CategoriesRepository();
 
 categoriesRoutes.post("/", (request, response)=>{
   
