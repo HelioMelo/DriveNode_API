@@ -1,12 +1,14 @@
-import express, { request, response } from 'express';
+import express from 'express';
+import { categoriesRoutes } from './routes/categories.routes';
 
 const app = express();
 
+app.use(express.json());
+
 const PORT = 3333;
 
-app.get('/',(request, response)=>{
-  return response.json({message: "Hello word"})
-})
+app.use(categoriesRoutes); 
+
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
