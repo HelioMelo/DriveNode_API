@@ -1,0 +1,42 @@
+# Dependências do Node.js
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ambiente local e variáveis sensíveis
+.env
+.env.local
+.env.*.local
+
+# Diretórios de cache
+.cache/
+dist/
+build/
+out/
+temp/
+
+# Configurações do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações de editores/IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Test coverage
+coverage/
+
+# Arquivos de produção
+*.min.js
+*.min.css
+
+# Configurações do sistema
+*.swp
+*.bak
+*.tmp
